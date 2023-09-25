@@ -6,4 +6,4 @@
 
   tasks:
     - name: Create ansible directory
-      command: mkdir /home/anurag/Desktop
+      command: mkdir /home/anurag/Desktop/anurag
