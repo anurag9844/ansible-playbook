@@ -1,11 +1,11 @@
 ---
 - name: Create a folder on the desktop
-  hosts: 192.168.88.22  # Replace with the hostname or IP address of your Ubuntu machine
-  become: yes  # This enables privilege escalation (sudo)
+  hosts: 192.168.88.22  
+  become: yes  
 
   tasks:
     - name: Create the folder on the desktop
       file:
-        path: /home/anurag/Desktop/my_folder  # Change 'my_folder' to your desired folder name
+        path: /home/anurag/Desktop/my_folder  
         state: directory
-      become_user: anurag  # Replace with your Ubuntu username
+      become_user: anurag  
