@@ -2,6 +2,7 @@
 - name: Create Ansible folder
   hosts: my_target_host
   become: true
+  become_user: anurag
 
   tasks:
     - name: Create ansible directory
