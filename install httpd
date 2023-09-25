@@ -1,1 +1,23 @@
+---
+- name: Update Apache HTTP server on Ubuntu
+  hosts: 192.168.88.85
+  become: yes  # This enables privilege escalation (sudo)
+
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+      become_user: root
+
+    - name: Install Apache2 package (HTTP server)
+      apt:
+        name: apache2
+        state: latest  # This ensures the latest version is installed
+      become_user: root
+
+    - name: Ensure Apache2 service is running
+      service:
+        name: apache2
+        state: started
+      become_user: anurag
 
