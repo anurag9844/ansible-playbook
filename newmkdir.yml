@@ -6,6 +6,6 @@
   tasks:
     - name: Create the folder on the desktop
       file:
-        path: ~/Desktop/my_folder  # Change 'my_folder' to your desired folder name
+        path: /home/anurag/Desktop/my_folder  # Change 'my_folder' to your desired folder name
         state: directory
       become_user: anurag  # Replace with your Ubuntu username
