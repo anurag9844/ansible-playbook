@@ -1,6 +1,6 @@
 ---
 - name: Create a folder on the desktop
-  hosts:  all
+  hosts:  13.235.248.129 
   become: yes  
 
   tasks:
