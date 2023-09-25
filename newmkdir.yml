@@ -1,6 +1,6 @@
 ---
 - name: Create a folder on the desktop
-  hosts: your_target_host  # Replace with the hostname or IP address of your Ubuntu machine
+  hosts: 192.168.88.22  # Replace with the hostname or IP address of your Ubuntu machine
   become: yes  # This enables privilege escalation (sudo)
 
   tasks:
