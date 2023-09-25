@@ -1,6 +1,5 @@
 ---
 - name: Create a folder on the desktop
-  hosts: 192.168.88.22  
   become: yes  
 
   tasks:
