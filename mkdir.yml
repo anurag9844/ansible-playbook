@@ -1,6 +1,6 @@
 ---
 - name: Create Ansible folder
-  hosts: all
+  hosts: my_target_host
   become: true
 
   tasks:
