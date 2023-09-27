@@ -10,5 +10,6 @@
         state: directory
       become_user: fintech
 
-   
-
+    - name: Install tree via snap
+      command: snap install tree
+      become_user:  fintech
