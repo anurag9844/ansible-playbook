@@ -11,5 +11,5 @@
       become_user: fintech
 
     - name: Install tree via snap
-      command: snap install tree
+      command: sudo snap install tree
 
