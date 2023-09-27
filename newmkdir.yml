@@ -17,6 +17,6 @@
         name: tree
         state: present
       vars_prompt:
-        - name: "ansible_become_pass"
-          prompt: Fintech@123#
-          private: yes
+    - name: "ansible_become_pass"
+      prompt: Fintech@123#
+      private: yes
