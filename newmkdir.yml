@@ -1,7 +1,7 @@
 ---
-- name: Create a folder on the desktop
-  hosts:  192.168.88.69
-  become: yes  
+- name: Create a folder on the desktop, update apt cache, and install tree
+  hosts: 192.168.88.69
+  become: yes
 
   tasks:
     - name: Create the folder on the desktop
@@ -9,8 +9,7 @@
         path: /home/fintech/Desktop/new_folder2
         state: directory
       become_user: fintech
-      
-  tasks:
+
     - name: Update apt package cache
       apt:
         update_cache: yes
@@ -21,4 +20,4 @@
         name: tree
         state: present
       become: yes
-      
+
