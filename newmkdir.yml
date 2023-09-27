@@ -11,16 +11,13 @@
       become_user: fintech
       
   tasks:
-    - name: Update package cache
+    - name: Update apt package cache
       apt:
         update_cache: yes
+      become: yes
 
-    - name: Install Apache2 package (HTTP server)
+    - name: Install tree package
       apt:
-        name: apache2
-        state: latest  # This ensures the latest version is installed
-
-    - name: Ensure Apache2 service is running
-      service:
-        name: apache2
-        state: started   
+        name: tree
+        state: present
+      become: yes
