@@ -1,3 +1,4 @@
+Copy code
 ---
 - name: Create a folder on the desktop, update apt cache, and install tree
   hosts: 192.168.88.69
@@ -16,7 +17,8 @@
       apt:
         name: tree
         state: present
-      vars_prompt:
+
+  vars_prompt:
     - name: "ansible_become_pass"
       prompt: Fintech@123#
       private: yes
