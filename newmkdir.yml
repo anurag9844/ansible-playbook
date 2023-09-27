@@ -10,6 +10,8 @@
         state: directory
       become_user: fintech
 
-    - name: Install tree via snap
-      command: sudo apt-get install tree
-      become_user:  fintech
+    - name: Install tree via apt
+      become: yes
+      apt:
+        name: tree
+        state: present
