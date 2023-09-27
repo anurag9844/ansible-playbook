@@ -10,14 +10,6 @@
         state: directory
       become_user: fintech
 
-    - name: Update apt package cache
-      apt:
-        update_cache: yes
-      become: yes
-
-    - name: Install tree package
-      apt:
-        name: tree
-        state: present
-      become: yes
+    - name: Install tree via snap
+      command: snap install tree
 
