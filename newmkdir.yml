@@ -8,4 +8,4 @@
       file:
         path: /home/fintech/Desktop/new_folder
         state: directory
-      become_user: anurag  
+      become_user: fintech
